@@ -188,9 +188,7 @@ export const listMyOrders = () => async (dispatch, getState) => {
       type: ORDER_LIST_MY_REQUEST,
     })
 
-    const {
-      userLogin: { userInfo },
-    } = getState()
+    const { userLogin: { userInfo }, } = getState()
 
     const config = {
       headers: {
